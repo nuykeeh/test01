@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.L{
+    width: 100%;
+    margin-top: 0px;
+}
+.M{
+    width: 100%;
+}
+.S{
+    width: 100%;
+}
+
+.L {
+    display: block;
+}
+
+.M, .S {
+    display: none;
+}
+
+/* Tablet styles */
+@media (max-width: 1440px) and (min-width: 991px) {
+    .L {
+        display: none;
+    }
+    .M {
+        display: block;
+    }
+    .S {
+        display: none;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 990px) and (min-width: 376px) {
+    .L, .M {
+        display: none;
+    }
+    .S {
+        display: block;
+    }
+}
+
+/* Small mobile styles */
+@media (max-width: 375px) {
+    .L, .M {
+        display: none;
+    }
+    .S {
+        display: block;
+    }
+}
